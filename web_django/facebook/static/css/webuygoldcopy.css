@@ -1,0 +1,440 @@
+@font-face {
+    font-family: yoxall;
+    src: url(./fonts/yoxall_b.tff);
+}
+
+:root{
+    font-size: 16px;
+    --blue001: #003366;
+    --yellow: #E1B03D;
+    --light001: #fafcfe;
+    --red001: #ff5757;
+}
+
+* {
+    box-sizing: border-box;
+  }
+  
+body{
+    margin: 0px;
+    font-family: yoxall, sans-serif;
+    background-image: url(/Users/sioncherem/Desktop/Webuygold/gold_background.jpg);
+}
+
+#first_container{
+    display: grid;
+    position: fixed; 
+    top: 0; 
+    width: 100%; 
+}
+
+#navbar_container{
+    display: grid;
+    grid-auto-flow: column;
+    background-color: #858585;
+    max-height: 100px;
+
+    
+}
+
+#covid_container{
+    text-align: center;
+    font-size: 10px;
+    background-color: #ECF4FE;
+    border: .001px solid  #ECF4FE;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.covid_19{
+    color: red;
+}
+
+#logo{
+    display: grid;
+    justify-content: flex-start;
+    align-content: center;
+    max-height: 100px;
+    display: grid;
+    grid-auto-flow: column;
+
+}
+
+.phone_number{
+    color: white;
+    padding-top: 10px;
+    margin-left: 20px;
+}
+
+.main_heading{
+    height: 30px;
+    justify-self: center;
+    align-self: center;
+    margin-left: 5px;
+
+}
+
+.links{
+    display: grid;
+    grid-auto-flow: column;
+    max-height: 100px;
+    align-content: center;
+    gap: 10px;
+}
+
+a{
+    color: white;
+}
+
+.nav_links:hover{
+    color: var(--yellow)
+}
+
+#second_conatiner{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 600px;
+    background-color: white;
+    background-image: url(/Users/sioncherem/Desktop/Webuygold/goldpic.jpeg);
+    background-size: 55%;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 5px groove var(--light001);
+    margin-top: 160px;
+    margin-left: 40px;
+    margin-right: 40px;
+    
+}
+
+
+/* span{
+    color: var(--yellow);
+} */
+
+#cash{
+    color: green;
+}
+
+.first_item{
+    margin-top: 20px;
+    text-align: center;
+    line-height: 200%;
+    
+}
+
+#front_description{
+    padding: 0px 200px;
+    justify-self: center;
+
+}
+
+#first_heading{
+    justify-self: center;
+    font-size: 2.5rem;
+    
+}
+
+#second_heading{
+    font-size: 2.5rem;
+    
+}
+
+.second_item_form{
+    display: grid;
+    justify-content: center;
+    padding: 30px;
+    max-height: 275px;
+    
+}
+
+.first_last_name{
+    margin: 20px;
+}
+
+input{
+    border-radius: 5px;
+    height: 20px;
+}
+
+
+form{
+    border: 2px solid;
+    height: 300px;
+    background-color: rgb(0, 0, 0, .2);
+    border-radius: 26px;
+    box-shadow: 0 0 15px 4px rgba(0,0,0,0.06);
+
+}
+
+label{
+    color:var(--light001);
+}
+
+#submit_button{
+    margin: 0px 40px;
+    border-radius: 5px;
+    height: 30px;
+  
+}
+
+#request_a_kit{
+    text-align: center;
+    color: white;
+
+}
+#third_container{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin: 40px;
+    background-color: #174CA9;
+    height: 700px;
+    border-radius: 10px;
+    padding-top: 10px;
+  
+}
+
+.gold_and_moneyy{
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: center;
+    border: 5px solid blue;
+    column-gap: 60px;
+}
+
+
+
+
+#description_container{
+    background-color: #034092;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr;
+    border: 1px solid #2977FF;
+    color:var(--light001);
+    column-gap: 30px;
+    border-radius: 26px;
+    margin: 20px;
+    padding-bottom: 20px;
+    justify-content: center;
+    align-content: center;
+
+    
+}
+
+#heading{
+    color: var(--light001);
+    font-family: 'Montserrat', sans-serif;
+    grid-area: 1 / 2 / span 1 / span 1;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+#webuygoldusa{
+    
+    font-size: 3rem;
+    text-align: center;
+
+
+}
+#three_steps{
+    
+    text-align: center;
+   
+
+}
+
+#first_description{
+
+    border: 5px solid blue;
+    border-radius: 10px;
+    margin-left: 20px;
+    grid-area: 2 / 1 / span 1 / span 1;
+    text-align: center;
+}
+
+#second_description{
+    border: 5px solid blue;
+    border-radius: 10px;
+    grid-area: 2 / 2 / span 1 / span 1;
+    text-align: center;
+}
+
+#third_description{
+    border: 5px solid blue;
+    border-radius: 10px;
+    margin-right: 20px;
+    grid-area: 2 / 3 / span 1 / span 1;
+    text-align: center;
+}
+
+
+
+#description_images{
+    max-width: 80px;
+    max-height: 80px;
+}
+
+.get_started_button {
+    transition-duration: 0.4s;
+    width: 100px;
+    height: 30px;
+    margin: 0;
+    position: absolute;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+
+}
+
+  
+.get_started_button:hover {
+    background-color: var(--yellow); /* Green */
+    color: white;
+  }
+
+
+
+#fourth_container{
+    display: grid;
+    gap: 30px;
+    margin: 0px 40px;
+    padding-bottom: 20px;
+    background-color: white;
+    
+}
+
+.second_border{
+    width: 500px;
+    height: 5px;
+    margin: 26px auto;
+    background: var(--yellow);
+}
+
+
+#reviews_heading{
+    
+    max-height: 200px;
+    text-align: center;
+    background-color: #ECF4FE;
+    margin: 0px 40px;
+    font-size: 2rem;
+    padding: 6px 0px;
+
+    
+}
+
+
+.fivestars{
+    text-align: center;
+    font-size: 2rem;
+}
+
+.stars{
+    color: var(--yellow);
+    font-size: 3rem;
+
+}
+.stars_container{
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: flex-start;
+
+}
+
+.small_stars{
+    color: var(--yellow);
+}
+
+.name{
+    text-align: center;
+    font-size: .9rem;
+    color: grey;
+    
+
+}
+
+
+
+.review_paragraph{
+    text-align: center;
+    
+}
+
+#first_review{
+    border-bottom: 2px solid rgba(0,0,0,0.06);
+    display: grid;
+    align-self: center;
+    margin-left: 10px;
+    
+    
+    
+}
+
+#second_review{
+    border-bottom: 2px solid rgba(0,0,0,0.06);
+    display: grid;
+    align-self: center;
+    margin-left: 10px;
+    
+    
+}
+
+#third_review{
+    border-bottom: 2px solid rgba(0,0,0,0.06);
+    display: grid;
+    align-self: center;
+    margin-left: 10px;
+}
+
+
+.last_container{
+    
+    
+}
+
+.social_media_pics{
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: center;
+    align-content: center;
+    gap: 40px;
+    min-height: 100px;
+    
+ 
+}
+
+.nav_bar_section{
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: center;
+    align-content: center;
+    gap: 50px;
+}
+
+.logo_container{
+    align-items: center;
+    justify-items: center;
+    display: grid;
+    
+
+}
+
+#last_pic{
+    justify-self: center;
+  
+}
+
+.main_heading2{
+    height: 30px;
+    justify-self: center;
+    align-self: center;
+    padding-top: 15px;
+    margin: 20px 0px;
+}
+
+
